@@ -3,20 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Jathin Sahu - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="headings" id="head1">Intro</div>
-        <div class="headings" id="head2">About</div>
-        <div class="headings" id="head3">Achivements</div>
-        <div class="headings" id="head4">Projects</div>
+        <nav>
+            <div class="logo">JS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
-    hello, i am <h1>Jathin Kumar Sahu</h1>
-    <div class="intro">
-        A tech Enthusiast who is proficient in dsa and java, solved over 1000 questions in leetcode
-    </div>
     
+    <main>
+        <section id="hero">
+            <h1>Hi, I'm Jathin Kumar Sahu</h1>
+            <p>Competitive Programmer, Aspiring Backend Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Tweet Summarizer">
+                    <h3>Tweet Summarizer</h3>
+                    <p>Built with html, css, js and gemini api</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Jathin Sahu. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/navigation.js"></script>
 </body>
 </html>
