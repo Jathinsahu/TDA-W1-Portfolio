@@ -1,53 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jathin Sahu - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Jathin Kumar Sahu - Portfolio showcasing my skills, projects, and contact information">
+  <title>Jathin Kumar Sahu | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">JS</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">JKS</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Jathin Kumar Sahu</span></h1>
+          <p class="subtitle">Software Developer & Problem Solver</p>
+          <p class="description">B.Tech CSE (AI) student passionate about backend development and algorithmic
+            problem-solving. Solved 1000+ LeetCode problems!</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/profile.jpg" alt="Jathin Kumar Sahu - Profile Picture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a B.Tech Computer Science & Engineering (AI) student at Parul University with a passion for solving
+            complex problems and building innovative solutions.</p>
+          <p>With proficiency in Java, Python, and C, I've tackled over 1000+ LeetCode problems, maintaining a daily
+            streak of over 340 days. I enjoy backend development and creating practical tools that solve real-world
+            problems.</p>
+          <p>Currently learning System Design, Spring Framework, and PostgreSQL to build more scalable applications.</p>
+        </div>
+        <div class="education">
+          <h3>Education</h3>
+          <div class="education-item">
+            <h4>B.Tech - CSE (AI)</h4>
+            <p>Parul University, Vadodara</p>
+            <p>2022 - 2026 | CGPA: 8.48/10</p>
+          </div>
+          <div class="education-item">
+            <h4>Class 12th</h4>
+            <p>BIEAP, Sri Chaitanya</p>
+            <p>2022 | 86.40%</p>
+          </div>
+          <div class="education-item">
+            <h4>Class 10th</h4>
+            <p>BSEAP, Sri Chaitanya</p>
+            <p>2020 | 99.3%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-item">
+            <span>Java</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
             </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="hero">
-            <h1>Hi, I'm Jathin Kumar Sahu</h1>
-            <p>Competitive Programmer, Aspiring Backend Developer</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </section>
-        
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="images/project1.jpg" alt="Tweet Summarizer">
-                    <h3>Tweet Summarizer</h3>
-                    <p>Built with html, css, js and gemini api</p>
-                </div>
-                
+          </div>
+          <div class="skill-item">
+            <span>Python</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2026 Jathin Sahu. All rights reserved.</p>
-    </footer>
-    
-    <script src="js/navigation.js"></script>
+          </div>
+          <div class="skill-item">
+            <span>C</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>SQL</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Technologies & Tools</h3>
+          <ul class="tech-list">
+            <li>Data Structures & Algorithms</li>
+            <li>Backend Development</li>
+            <li>Object-Oriented Programming</li>
+            <li>Software Design</li>
+            <li>Git & GitHub</li>
+            <li>HTML & CSS</li>
+            <li>Web Scraping</li>
+            <li>APIs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Tweet Summarizer</h3>
+          <p>Chrome extension that summarizes tweets via URL using the Google Gemini API.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>Chrome Extension</span>
+            <span>Gemini API</span>
+          </div>
+          <a href="https://github.com/Jathinsahu/tweet_summarizer" target="_blank" class="project-link">View on GitHub
+            →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Personal Voice Assistant</h3>
+          <p>Voice-activated Python assistant using APIs like Wikipedia and OpenWeather.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>APIs</span>
+            <span>Voice Recognition</span>
+          </div>
+          <a href="https://github.com/Jathinsahu/personal_voice_asssistant" target="_blank" class="project-link">View on
+            GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>News Trend Query System</h3>
+          <p>Real-time trending news summarizer using Google Gemini API.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Gemini API</span>
+            <span>Web Scraping</span>
+          </div>
+          <a href="https://github.com/Jathinsahu/news_trend_query_system" target="_blank" class="project-link">View on
+            GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>LeetCode Problem Saver</h3>
+          <p>Chrome extension to bookmark and manage LeetCode problems.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>Chrome Extension</span>
+            <span>Local Storage</span>
+          </div>
+          <a href="https://github.com/Jathinsahu/leetcode-problem-saver" target="_blank" class="project-link">View on
+            GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Connecting Trains Finder</h3>
+          <p>System for finding connecting train routes based on real-time data. <span class="wip">In Progress</span>
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Algorithms</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Library Management System</h3>
+          <p>Building an enhanced LMS for modern library operations with AI integration plans. <span class="wip">In
+              Progress</span></p>
+          <div class="tech-tags">
+            <span>Java</span>
+            <span>Backend</span>
+            <span>Database</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <strong>Email:</strong>
+            <a href="mailto:jathinsahu@gmail.com">jathinsahu@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <strong>Location:</strong>
+            <span>Visakhapatnam, Andhra Pradesh, India</span>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/jathinsahu" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jathinsahu" target="_blank">GitHub</a>
+            <a href="https://leetcode.com/u/jathinsahu/" target="_blank">LeetCode</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Jathin Kumar Sahu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
